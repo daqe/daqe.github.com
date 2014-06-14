@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% include head.html %}
+<body>
+<div id="art-main">
+    {% include header.html %}
+    <div class="art-sheet clearfix">
+        <div class="art-layout-wrapper">
+            <div class="art-content-layout">
+                <div class="art-content-layout-row">
+                    <div class="art-layout-cell art-content">
+                        <article class="art-post art-article">
+                            {{ content }}
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+</div>
+</body>
+</html>

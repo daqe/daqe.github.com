@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  {% include head.html %}
+  <body>
+    <div id="art-main">
+      {% include header.html %}
+      <div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-block clearfix">
+                                <div class="art-blockheader" >
+                                    <h3 class="t">产品服务</h3>
+                                </div>
+                                <div class="art-blockcontent" style="font-size: 14px;line-height:20px;letter-spacing:2px;" >
+                                    <p>网站开发建设
+                                        <a href="#">
+                                            <img width="8" height="6"    alt=""   src="/images/5.png">
+                                        </a>
+                                    </p>
+
+                                    <p>企业ERP系统
+                                        <a href="#">
+                                            <img width="8" height="6" alt=""    src="/images/5.png"></a>
+                                    </p>
+
+                                    <p>电子商务平台
+                                        <a href="#"><img width="8" height="6" alt="" src="/images/5.png"></a>
+                                    </p>
+
+                                    <p>电商OMS系统
+                                        <a href="#"><img width="8" height="6" alt=""
+                                                         src="/images/5.png"></a>
+                                    </p>
+
+                                    <p>WMS仓储系统
+                                        <a href="#"><img width="8" height="6" alt=""
+                                                         src="/images/5.png"></a>
+                                    </p>
+
+                                    <p>数据集成分析 <a href="#"><img width="8" height="6" alt=""
+                                                               src="/images/5.png"></a>
+                                    </p>
+
+                                    <p>软件定制开发 <a href="#"><img width="8" height="6" alt=""
+                                                               src="/images/5.png"></a>
+                                    </p>
+
+                                    <p>
+                                        IT技术咨询服务<a href="#"><img width="8" height="6" alt="" src="/images/5.png"></a>
+                                    </p>
+                                    <p>IT教育与培训 <a href="#"><img width="8" height="6" alt=""
+                                                                    src="/images/5.png"></a>
+                                    </p>
+                                    <br>
+
+                                    <p><a href="/product/" class="art-button">更多</a></p></div>
+                            </div>
+                            <div class="art-block clearfix">
+                                <div class="art-blockheader">
+                                    <h3 class="t">关注我们</h3>
+                                </div>
+                                <div class="art-blockcontent">
+                                     <p style="text-align: center;">
+                                       <img width="50" height="50"    alt=""  src="/images/1305276470_social_facebook_box_white.png">
+                                       <img  width="50" height="50" alt=""   src="/images/1305276480_social_twitter_box_white.png">
+                                       <img width="50" height="50"   alt="" src="/images/1305276487_social_rss_box_white.png">
+                                     </p>
+                                </div>
+                            </div>
+                            <div class="art-block clearfix">
+                                <div class="art-blockheader">
+                                    <h3 class="t" style="border-bottom: 1px solid #374865">公司新闻</h3>
+                                </div>
+                                {% include newsider.html %}
+                            </div>
+                        </div>
+                        <div class="art-layout-cell art-content">
+                            <article class="art-post art-article">
+
+                               {{ content }}
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

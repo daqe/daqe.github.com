@@ -1,0 +1,11 @@
+
+
+<div class="art-blockcontent">
+    {% for post in site.posts limit:5 %}
+    <p style="border-bottom: 1px solid #374865">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
+        </a><br><br>
+    </p>
+    {% endfor %}
+    <p><a href="/news/" class="art-button">更多</a></p>
+</div>

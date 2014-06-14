@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% include head.html %}
+<body>
+<div id="art-main">
+    {% include header.html %}
+    <div class="art-sheet clearfix">
+        <div class="art-layout-wrapper">
+            <div class="art-content-layout">
+                <div class="art-content-layout-row">
+                    <div class="art-layout-cell art-sidebar1">
+                        <div class="art-block clearfix">
+                            {% include newsider_all.html %}
+                        </div>
+                        <div class="art-block clearfix">
+                            <div class="art-blockheader">
+                                <h3 class="t">关注我们</h3>
+                            </div>
+                            <div class="art-blockcontent">
+                                <p style="text-align: center;">
+                                    <img width="50" height="50"    alt=""  src="/images/1305276470_social_facebook_box_white.png">
+                                    <img  width="50" height="50" alt=""   src="/images/1305276480_social_twitter_box_white.png">
+                                    <img width="50" height="50"   alt="" src="/images/1305276487_social_rss_box_white.png">
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="art-layout-cell art-content">
+                        <article class="art-post art-article">
+                            {{ content }}
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+</div>
+</body>
+</html>

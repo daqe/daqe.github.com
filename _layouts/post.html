@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div style="border-bottom: 1px dotted  #B1B8C3">
+  <h2 class="art-postheader">{{ page.title }}</h2>
+  <p class="meta" style="color:grey;text-align: right">{{ page.date | date:"%Y-%m-%d" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+</div>
+<div class="art-postcontent art-postcontent-0 clearfix">
+    <div class="art-content-layout">
+        <div class="art-content-layout-row">
+            <div class="art-layout-cell layout-item-0" style="width: 100%;line-height:20px;letter-spacing:2px;">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>

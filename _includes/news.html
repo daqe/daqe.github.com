@@ -1,0 +1,19 @@
+<div style="border-bottom: 1px dotted  #B1B8C3">
+<h2 class="art-postheader">{{ post.title }}</h2>
+<p class="meta" style="color:grey;text-align: right">
+    {{ post.date | date: "%Y-%m-%d" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}
+</p>
+</div>
+<div class="art-postcontent art-postcontent-0 clearfix" style="border-bottom: 2px solid #B1B8C3">
+    <div class="art-content-layout">
+        <div class="art-content-layout-row">
+            <div class="art-layout-cell layout-item-0" style="width: 100%;">
+                <div class="new-content">
+                    {{ post.content }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br>
